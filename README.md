@@ -13,8 +13,10 @@ pip install gym
 ```python
 
 from user_env import UserEnv
-env = UserEnv(NAME="pat1", N_ACTIONS=5, NOISE_LEVEL=1.0, , RAND_INFLUENCE=0.01)
+env = UserEnv(NAME="pat1", N_ACTIONS=5, NOISE_LEVEL=1.0, , RAND_INFLUENCE=0.01, seed=42)
 ```
+
+If no RAND_INFLUENCE is specified, a standard value of 0.05 is set. RAND_INFLUENCE is the parameter c in the paper.
 
 ### Run simulation
 
